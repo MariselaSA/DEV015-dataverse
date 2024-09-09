@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D79696;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Main Content */
+  #root {
+    margin: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  li {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+  }
+  
+  li:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Item Image */
+  li img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Item Title */
+  li h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Item Description */
+  li p {
+    color: #666;
+  }
+  
+  /* Filters */
+  .filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .filters select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
