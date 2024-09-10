@@ -1,15 +1,10 @@
 export const renderItems = (data) => {
-  let resultado = " "
-
-  console.log(data)
-  // Aquí comienza tu código y puedes retornar lo que tu necesites
-  for (let sitio of data) {
-    const image=  "<img src= '"+sitio.imageUrl+"'>" ;
-    resultado = resultado + "<li>" +image+ sitio.name + "<p>"+sitio.shortDescription+"</p>"+ "</li>";
-
-
-  }
-  return resultado;
-
+  return data.map(sitio => `
+        <li class="li" itemtype="tarjeta" itemscope>
+      <img src="${sitio.imageUrl}" alt="${sitio.name}">
+      <p>${sitio.name}</p>
+      <p>${sitio.shortDescription}</p>
+      <p>${sitio.facts.departamento}</p>
+    </li>    
+  `).join('');
 };
-

@@ -18,14 +18,15 @@ body {
     margin: 20px;
   }
   
-  ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
+ #root ul {
     flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    padding: 0; 
+   
   }
   
-  li {
+  .li {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -69,5 +70,9 @@ body {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
+  
   }
   
+  footer{
+    display: flex;
+  }
